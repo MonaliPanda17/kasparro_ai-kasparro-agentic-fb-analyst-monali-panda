@@ -17,10 +17,12 @@ def test_load_csv_valid_file():
         "spend": [100.0, 200.0, 300.0, 400.0, 500.0],
         "impressions": [1000, 2000, 3000, 4000, 5000],
         "clicks": [50, 100, 150, 200, 250],
+        "ctr": [0.05, 0.05, 0.05, 0.05, 0.05],  # clicks/impressions
         "purchases": [5, 10, 15, 20, 25],
         "revenue": [250.0, 500.0, 750.0, 1000.0, 1250.0],
         "roas": [2.5, 2.5, 2.5, 2.5, 2.5],
         "creative_type": ["Image"] * 5,
+        "creative_message": ["Test message"] * 5,
         "platform": ["Facebook"] * 5,
         "country": ["US"] * 5,
         "audience_type": ["Broad"] * 5,

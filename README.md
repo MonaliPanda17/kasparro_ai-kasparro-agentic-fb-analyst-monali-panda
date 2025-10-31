@@ -307,25 +307,25 @@ pytest tests/ -v
 
 ## Features
 
-✅ **Agentic Reasoning Architecture**
+**Agentic Reasoning Architecture**
 - Planner decomposes queries into subtasks
 - Clear Planner-Evaluator feedback loop
 
-✅ **Structured Prompts**
+**Structured Prompts**
 - Layered prompts with JSON schema
 - Think → Analyze → Conclude reasoning structure
 
-✅ **Quantitative Validation**
+**Quantitative Validation**
 - Cross-validates numbers against evidence
 - Mathematical consistency checks
 - Reflection/retry logic
 
-✅ **Low-CTR Focus**
+**Low-CTR Focus**
 - Identifies underperforming campaigns
 - Data-driven creative recommendations
 - Expected improvement metrics
 
-✅ **Observability**
+**Observability**
 - JSONL traces in `logs/` directory for all agent interactions
 - Detailed evaluation feedback and confidence scoring
 
@@ -340,6 +340,22 @@ See `requirements.txt` for full list. Key dependencies:
 - `rich` - Terminal output formatting
 - `openai` - LLM integration (optional)
 - `pytest` - Testing
+
+## Release
+
+- Tag: [`v1.0`](https://github.com/MonaliPanda17/kasparro_ai-kasparro-agentic-fb-analyst-monali-panda/releases/tag/v1.0)
+
+
+## Self-Review
+
+See [SELF_REVIEW.md](SELF_REVIEW.md) for detailed design choices, tradeoffs, and architecture decisions.
+
+**Highlights**:
+- Agent-based architecture with clear separation of concerns
+- Hybrid LLM + rule-based planner for reliability
+- Externalized prompts for easy iteration
+- Quantitative validation with evaluator feedback loop
+- Multiple output formats (Markdown + JSON)
 
 ## License
 
