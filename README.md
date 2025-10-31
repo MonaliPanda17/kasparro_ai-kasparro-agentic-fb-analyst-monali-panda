@@ -35,6 +35,7 @@ OPENAI_API_KEY=your_api_key_here
 
 # For custom data path (optional)
 DATA_CSV=/path/to/your/fb_ads_data.csv
+
 ```
 
 ### Run Analysis
@@ -60,7 +61,7 @@ The system uses `data/synthetic_fb_ads_undergarments.csv` by default (if `use_sa
 2. Set environment variable:
    ```bash
    export DATA_CSV=/path/to/your/fb_ads_data.csv  # Linux/Mac
-   set DATA_CSV=C:\path\to\your\fb_ads_data.csv    # Windows
+   set DATA_CSV=C:\path\to\your\synthetic_fb_ads_undergarments.csv.csv    # Windows
    ```
 3. Set `use_sample_data: false` in `config/config.yaml`
 
