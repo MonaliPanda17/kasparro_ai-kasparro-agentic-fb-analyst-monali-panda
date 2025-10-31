@@ -3,8 +3,7 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 *.pyc
-logs/*.jsonl
-logs/.gitkeep
+!logs/.gitkeep
 reports/*
 !reports/report.md
 !reports/insights.json
