@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Dict, Any, List, Optional
 
+from src.schema_validator import validate_insights
+
 
 def _format_delta(v: float) -> str:
     try:
@@ -151,6 +153,13 @@ def generate_insights(
                 "impact": _calculate_impact(revenue_delta_val, row.get("roas_delta", 0), spend_share),
             })
 
-    return insights
+    # Validate insights against schema (non-strict: allows extra fields)
+    try:
+        validated = validate_insights(insights, strict=False)
+        # Convert back to dicts for backward compatibility, but structure is validated
+        return [ins.model_dump() for ins in validated]
+    except Exception:
+        # If validation fails, return original (shouldn't happen in non-strict mode)
+        return insights
 
 

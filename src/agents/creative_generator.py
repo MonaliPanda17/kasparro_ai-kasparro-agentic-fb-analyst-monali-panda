@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Dict, Any, List, Optional
 
+from src.schema_validator import validate_creatives
+
 
 def _find_low_ctr_campaigns(
     segments: Dict[str, Any], overview: Optional[Dict[str, Any]] = None, min_spend: float = 1000.0
@@ -216,7 +218,21 @@ def generate_creatives(
                     "confidence": 0.65,
                 },
             })
+
+    # Validate creative ideas against schema (non-strict: allows extra fields)
+    creative_ideas = []
+    for cr in creatives[:6]:
+        creative_part = cr.get("creative", {})
+        try:
+            validated_creative = validate_creatives([creative_part], strict=False)
+            if validated_creative:
+                # Keep full structure but validate creative schema
+                cr["creative"] = validated_creative[0].model_dump()
+            creative_ideas.append(cr)
+        except Exception:
+            # If validation fails, include original
+            creative_ideas.append(cr)
     
-    return creatives[:6]
+    return creative_ideas
 
 
