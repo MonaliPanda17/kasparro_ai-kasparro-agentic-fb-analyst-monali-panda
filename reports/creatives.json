@@ -1,0 +1,117 @@
+[
+  {
+    "target_campaign": "Women Cotton Classics",
+    "target_segment": {
+      "platform": "Facebook",
+      "country": "US",
+      "audience_type": "Broad"
+    },
+    "current_performance": {
+      "ctr": 0.009665234968728623,
+      "roas": 7.682261197998633,
+      "spend": 16584.66
+    },
+    "creative": {
+      "hook": "Stop the ride-up. Stop the bunching. Start the comfort.",
+      "body": "Show the comfort in motion. Spotlight sweat-wicking fabric in a real-life demo.",
+      "cta": "Shop now"
+    },
+    "rationale": "Campaign 'Women Cotton Classics' has CTR 0.0097 (below threshold) with $16,585 spend. Adapting 'problem_solve' strategy from top-performing creatives. Expected to improve CTR through problem_solve messaging.",
+    "expected_improvement": {
+      "ctr_target": 0.013531328956220072,
+      "confidence": 0.7
+    }
+  },
+  {
+    "target_campaign": "Women Summer Invisible",
+    "target_segment": {
+      "platform": "Facebook",
+      "country": "US",
+      "audience_type": "Broad"
+    },
+    "current_performance": {
+      "ctr": 0.010319648575360604,
+      "roas": 4.22519540912239,
+      "spend": 16171.2
+    },
+    "creative": {
+      "hook": "Seamless Under Everything",
+      "body": "Contrast before/after silhouettes. Emphasize invisible seams and breathable cotton.",
+      "cta": "See the fit"
+    },
+    "rationale": "Campaign 'Women Summer Invisible' has CTR 0.0103 (below threshold) with $16,171 spend. Adapting 'visual_benefit' strategy from top-performing creatives. Expected to improve CTR through visual_benefit messaging.",
+    "expected_improvement": {
+      "ctr_target": 0.014447508005504844,
+      "confidence": 0.7
+    }
+  },
+  {
+    "target_campaign": "Women | Studio Sports",
+    "target_segment": {
+      "platform": "Facebook",
+      "country": "US",
+      "audience_type": "Broad"
+    },
+    "current_performance": {
+      "ctr": 0.009948306684848456,
+      "roas": 7.017561677673549,
+      "spend": 11756.28
+    },
+    "creative": {
+      "hook": "Stop the ride-up. Stop the bunching. Start the comfort.",
+      "body": "Show the comfort in motion. Spotlight sweat-wicking fabric in a real-life demo.",
+      "cta": "Shop now"
+    },
+    "rationale": "Campaign 'Women | Studio Sports' has CTR 0.0099 (below threshold) with $11,756 spend. Adapting 'problem_solve' strategy from top-performing creatives. Expected to improve CTR through problem_solve messaging.",
+    "expected_improvement": {
+      "ctr_target": 0.013927629358787838,
+      "confidence": 0.7
+    }
+  },
+  {
+    "target_campaign": "Men Premium Modal",
+    "target_segment": {
+      "platform": "Facebook",
+      "country": "US",
+      "audience_type": "Broad"
+    },
+    "current_performance": {
+      "ctr": 0.010060170026089882,
+      "roas": 6.284585522470216,
+      "spend": 11735.98
+    },
+    "creative": {
+      "hook": "Seamless Under Everything",
+      "body": "Contrast before/after silhouettes. Emphasize invisible seams and breathable cotton.",
+      "cta": "See the fit"
+    },
+    "rationale": "Campaign 'Men Premium Modal' has CTR 0.0101 (below threshold) with $11,736 spend. Adapting 'visual_benefit' strategy from top-performing creatives. Expected to improve CTR through visual_benefit messaging.",
+    "expected_improvement": {
+      "ctr_target": 0.014084238036525833,
+      "confidence": 0.7
+    }
+  },
+  {
+    "target_campaign": "Women-Studio Sports",
+    "target_segment": {
+      "platform": "Facebook",
+      "country": "US",
+      "audience_type": "Broad"
+    },
+    "current_performance": {
+      "ctr": 0.009930508582322223,
+      "roas": 6.318570024259805,
+      "spend": 3326.4900000000002
+    },
+    "creative": {
+      "hook": "Stop the ride-up. Stop the bunching. Start the comfort.",
+      "body": "Show the comfort in motion. Spotlight sweat-wicking fabric in a real-life demo.",
+      "cta": "Shop now"
+    },
+    "rationale": "Campaign 'Women-Studio Sports' has CTR 0.0099 (below threshold) with $3,326 spend. Adapting 'problem_solve' strategy from top-performing creatives. Expected to improve CTR through problem_solve messaging.",
+    "expected_improvement": {
+      "ctr_target": 0.01390271201525111,
+      "confidence": 0.7
+    }
+  }
+]

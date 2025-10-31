@@ -1,0 +1,46 @@
+python: "3.10"
+random_seed: 42
+confidence_min: 0.6
+use_sample_data: true
+
+paths:
+  data_csv_env: DATA_CSV
+  sample_csv: data/synthetic_fb_ads_undergarments.csv
+  reports_dir: reports
+  logs_dir: logs
+
+time_windows:
+  - 7
+  - 14
+  - 28
+
+segment_dims:
+  - campaign_name
+  - adset_name
+  - country
+  - platform
+  - creative_type
+  - audience_type
+
+llm:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+  use_llm_planner: true  # Enable LLM-based planning (falls back to rule-based if fails)
+  max_retries: 2
+  timeout_seconds: 10
+
+planner:
+  # Problem types - can be extended. LLM can also propose custom types.
+  problem_types:
+    - roas_drop
+    - revenue_decline
+    - cpa_spike
+    - ctr_decline
+    - performance_issue
+    - budget_allocation  # New: budget optimization questions
+    - creative_performance  # New: creative testing/evaluation
+    - audience_quality  # New: targeting effectiveness
+    - seasonal_analysis  # New: seasonal patterns
+  allow_custom_problem_types: true  # Allow LLM to propose new problem types beyond the list
+
