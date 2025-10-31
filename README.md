@@ -358,7 +358,4 @@ See [SELF_REVIEW.md](SELF_REVIEW.md) for detailed design choices, tradeoffs, and
 - Quantitative validation with evaluator feedback loop
 - Multiple output formats (Markdown + JSON)
 
-## License
-
-See assignment documentation for license terms.
 
